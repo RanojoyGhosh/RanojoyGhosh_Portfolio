@@ -57,7 +57,7 @@ main{
 #achievement-sec{background-color: var(--achievement-secbg-color);}
 header{
     width: 100%;
-    height: 95px;
+    height: 90px;
     position: fixed;
     top: 0;
     left: 0;
@@ -66,7 +66,7 @@ header{
 }
 #fakeheader{
     width: 100vw;
-    height: 95px;
+    height: 90px;
 }
 nav{
     height: 100%;
@@ -217,10 +217,8 @@ section{
     justify-content: center;
 }
 #platforms-div{
-    width: 100%; 
-    margin: 20px auto;
+    margin: 10px auto;
     width: 90vw;
-    margin: 25px auto;
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -611,9 +609,11 @@ footer textarea{
     display: flex;
     justify-content: center;
     gap: 35px;
-    margin: 30px 0;
+    margin: 25px 0;
 }
 #footer-div img{
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
 }
 .copyright{
