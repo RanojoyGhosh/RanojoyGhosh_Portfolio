@@ -107,12 +107,12 @@ nav ul li{
     text-shadow: 2px 1.5px 2px var(--img-shadow); 
 }
 section{
-    scroll-margin-top: 95px;
+    scroll-margin-top: 90px;
     padding-top: 10px;
 }
 #home{
     width: 90%;
-    margin:20px auto;
+    margin:18px auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -135,7 +135,7 @@ section{
     font-size: 3.1rem;
 }
 #home-div1 h3{
-    font-size: 2.625rem;
+    font-size: 2.61rem;
     margin: 12px 0;
     color: var(--jobrole-color);
 }
@@ -145,10 +145,10 @@ section{
 }
 #home-div1 p{
     font-size: 1.25rem;
-    margin: 20px 0;
+    margin: 18px 0;
 }
 #home-div1 h1,#home-div h2,#home-div h3{
-    margin: 20px 0;
+    margin: 18px 0;
 }
 #home-div2 img{
     width: 350px;
@@ -212,7 +212,7 @@ section{
 }
 #platforms{
     width: 100vw;
-    margin: 25px auto;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -223,7 +223,9 @@ section{
     justify-content: center;
     gap: 25px;
 }
-#platforms-div img{
+#footer-div img,#platforms-div img{
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
 }
 #platforms-div img:hover,#footer-div img:hover{
@@ -610,11 +612,6 @@ footer textarea{
     justify-content: center;
     gap: 35px;
     margin: 25px 0;
-}
-#footer-div img{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
 }
 .copyright{
     background-color: var(--footer-inputs-color);
