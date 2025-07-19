@@ -18,6 +18,7 @@ menuIcon.addEventListener('click', (e) => {
 });
 // Active Section Highlighting
 const sections = document.querySelectorAll('section');
+const footers = document.querySelectorAll('footer');
 const navLinks = document.querySelectorAll('.nav-link');
 
 window.addEventListener('scroll', () => {
@@ -27,6 +28,13 @@ window.addEventListener('scroll', () => {
         const sectionHeight = section.clientHeight;
         if (scrollY >= (sectionTop - 150)) {
             current = section.getAttribute('id');
+        }
+    });
+    footers.forEach(footer => {
+        const footerTop = footer.offsetTop;
+        const footerHeight = footer.clientHeight;
+        if (scrollY >= (footerTop - 150)) {
+            current = footer.getAttribute('id');
         }
     });
 
@@ -92,8 +100,9 @@ navLinks.forEach(link => {
 // scroll reveal
  ScrollReveal({ 
     reset: true,
-    distance:'30px',
+    distance:'70px',
     duration: 1000,
     delay:100
 });
-ScrollReveal().reveal('#home,#about,#experience,#skills-section,#project-section,#achievements,#contact', { origin:'top' });
+ScrollReveal().reveal('#home-div1,#about-div1,#experience,#skills-section,#project-section,#achievements,#contact', { origin:'top'});
+ScrollReveal().reveal('#home-div2,#about-div2', { origin:'bottom'});
