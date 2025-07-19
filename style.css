@@ -62,7 +62,7 @@ header{
     top: 0;
     left: 0;
     z-index: 100;
-    box-shadow: 5px 5px 15px var(--all-shadows);
+    box-shadow: 0 0 30px var(--all-shadows);
 }
 #fakeheader{
     width: 100vw;
@@ -80,9 +80,9 @@ nav ul{
     align-items: center;
 }
 nav ul li{
-    padding: 12px;
+    padding: 7.5px;
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -104,7 +104,7 @@ nav ul li{
     display: flex;
     align-items: center;
     gap: 10px;
-    text-shadow: 2px 1.5px 2px var(--img-shadow); 
+    text-shadow: 0px 0px 5px var(--img-shadow); 
 }
 section{
     scroll-margin-top: 90px;
@@ -130,6 +130,7 @@ section{
 #home-div1 h1{
     font-size: 3.75rem;
     color: var(--name-footerinputs-borders-color);
+    text-shadow: 0 0 10px var(--company-name-color); 
 }
 #home-div1 h2{
     font-size: 3.1rem;
@@ -138,6 +139,8 @@ section{
     font-size: 2.61rem;
     margin: 12px 0;
     color: var(--jobrole-color);
+    text-shadow: 0 0 3.7px var(--jobrole-color);
+    filter: brightness(500%);
 }
 #home-div1 h4{
     font-size: 2rem;
@@ -163,16 +166,17 @@ section{
 #home-div2 img:hover{
     position: relative;
     right: 10px;
-    outline: 8px solid var(--course-organizer-color);
-    outline-offset: 10px;
-    transition: all 0.5s ease-out 0.1s;
+    outline: 5px solid var(--course-organizer-color);
+    outline-offset: 20px;
+    border-radius: 8px;
+    transition: all 1s ease-out 0.1s;
 }
 @keyframes myimg {
     from{
-        outline-offset: 6px;
+        outline-offset: 5px;
     }
     to{
-        outline-offset: 12px;
+        outline-offset: 15px;
     }
 }
 .buttons-home{
@@ -257,7 +261,7 @@ section{
 #about-div1,#about-div2{
     width: 50%;
     height: 50%;
-    margin:20px 25px;
+    margin:5px 25px;
 }
 #about-div1 span{
     font-size: 18px;
@@ -270,17 +274,22 @@ section{
     justify-content: center;
 }
 #about-div2 img{
-    width: 360px;
+    width: 450px;
     height: fit-content;
     margin: 5px 0;
     border-radius: 20px; 
-    box-shadow: 3px 3px 3px var(--img-shadow); 
+    box-shadow: 3px 5px 10px var(--img-shadow); 
     filter: brightness(105%) contrast(115%);
+    outline: 1.5px solid var(--pic-certi-hover-color);
+    outline-offset: 7px;
+    animation: myimg 0.8s ease-in 0.2s infinite alternate-reverse;
+    filter: brightness(115%) contrast(125%);
 }
 #about-div2 img:hover{
     border: 5px solid var(--pic-certi-hover-color);
     position: relative;
     transform: scale(1.05);
+    animation:none;
     transition: all 0.2s ease-in-out 0.1s;
 }
 #box{
@@ -605,7 +614,6 @@ footer input,textarea{
 }
 footer textarea{
     padding: 10px 0 20px 10px;
-    size-adjust: none;
 }
 #footer-div{
     display: flex;
@@ -620,6 +628,12 @@ footer textarea{
     align-items: center;
     justify-content: center;
 }
+#back{
+    position:fixed;
+    bottom: 60px;
+    left: 30px;
+    z-index: 9999;
+}
 .lastbuttons{
     display: flex;
 }
@@ -627,7 +641,6 @@ footer textarea{
     padding: 15px 50px; 
     font-weight: bold;  
     border-radius: 6px;
-    --button-shadow:#fdacac;
     box-shadow: 3px 3px 3px var(--button-shadow);
     cursor: pointer;
 }
@@ -875,6 +888,9 @@ footer textarea{
     #logo{
         font-size: 1.14rem;
     }
+    section{
+        scroll-margin-top: 20px;
+    }
     #home{
         width: auto;
     }
@@ -1009,6 +1025,9 @@ footer textarea{
     }
     #reset,#submit{
         padding: 12px 40px; 
+    }
+    .copyright{
+        margin-top: 90px;
     }
 }
 /* more small devices */
